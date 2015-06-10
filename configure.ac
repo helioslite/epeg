@@ -5,7 +5,7 @@ rm -f config.cache
 
 m4_define([EPEG_MAJOR], 0)
 m4_define([EPEG_MINOR], 9)
-m4_define([EPEG_PATCH], 2)
+m4_define([EPEG_PATCH], 3)
 m4_define([EPEG_CURRENT], 10)
 m4_define([EPEG_REVISION], 0)
 m4_define([EPEG_AGE], 10)
