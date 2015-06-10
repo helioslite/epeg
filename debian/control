@@ -2,13 +2,16 @@ Source: epeg
 Section: libs
 Priority: optional
 Maintainer: E17 Debian Team <debian@edevelop.org>
-Build-Depends: cdbs, debhelper (>= 5), libjpeg62-dev
-Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 9), dh-autoreconf, libjpeg-dev, libexif-dev
+Standards-Version: 3.9.5
+Homepage: https://github.com/jbboehr/epeg
+Vcs-Git: git://github.com/jbboehr/epeg.git
+Vcs-Browser: https://github.com/jbboehr/epeg
 
 Package: libepeg0-dev
 Section: libdevel
 Architecture: any
-Depends: libepeg0 (= ${Source-Version}), libjpeg62-dev
+Depends: libepeg0 (= ${binary:Version}), ${misc:Depends}, libjpeg-dev, libexif-dev
 Provides: libepeg-dev
 Description: Enlightenment jpeg thumbnailer library development files
  This package contains headers and static libraries for development with
@@ -18,7 +21,7 @@ Package: libepeg0
 Section: libs
 Architecture: any
 Suggests: epeg-bin
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Provides: libepeg
 Description: Enlightenment jpeg thumbnailer library API
  It's a convenience library API to using libjpeg to load JPEG images
@@ -29,7 +32,7 @@ Description: Enlightenment jpeg thumbnailer library API
 Package: epeg0-bin
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: libepeg0 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Provides: epeg-bin
 Description: Enlightenment jpeg thumbnailer programs
  It's a convenience library API to using libjpeg to load JPEG images

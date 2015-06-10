@@ -52,25 +52,5 @@ AC_OUTPUT([
     src/Makefile
     src/lib/Makefile
     src/bin/Makefile
-    debian/changelog
 ])
 
-
-#####################################################################
-## Info
-
-echo
-echo
-echo
-echo "------------------------------------------------------------------------"
-echo "$PACKAGE $VERSION"
-echo "------------------------------------------------------------------------"
-echo
-echo "Configuration Options Summary:"
-echo
-echo "  Compilation..........: make"
-echo
-echo "  Installation.........: make install"
-echo
-echo "    prefix.............: $prefix"
-echo

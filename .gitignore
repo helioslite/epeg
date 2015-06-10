@@ -1,7 +1,12 @@
 .deps
 .libs
 epeg
+*.after
+*.before
+*.debhelper
 *.lo
+*.log
+*.substvars
 *.o
 *~
 libepeg.la
@@ -32,3 +37,6 @@ epeg.c
 epeg.pc
 epeg-uninstalled.pc
 epeg.spec
+INSTALL
+debian/files
+debian/*/
