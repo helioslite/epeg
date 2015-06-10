@@ -2,6 +2,8 @@
 .libs
 epeg
 *.lo
+*.o
+*~
 libepeg.la
 Makefile
 Makefile.in
